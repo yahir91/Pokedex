@@ -1,0 +1,9 @@
+.whiteBody {
+  width: 80%;
+  background-color: white;
+  margin: 0 auto;
+}
+
+.cardContainer {
+  width: 80% !important;
+}
