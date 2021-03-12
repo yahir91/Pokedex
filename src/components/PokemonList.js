@@ -1,32 +1,19 @@
 import Pokemon from './Pokemon'
+// import { useState, useEffect } from 'react';
 import useFetch from '../logic/useFetch'
 
 const PokemonList = () => {
-    const url = 'https://pokeapi.co/api/v2/pokemon/bulbasaur'
-    const { error, isPending, data: pokemon } = useFetch(url)
-
-    // const pokemons = [
-    //     {
-    //         name: 'Charizard',
-    //         type: 'Fire'
-    //     },
-    //     {
-    //         name: 'Pikachu',
-    //         type: 'Electric'
-    //     }
-    // ]
+    const url = `https://pokeapi.co/api/v2/pokemon?limit=150&offset=0`
+    const { error, isPending, data: pokemonList } = useFetch(url)
 
     return ( 
         <div className="home">
       { error && <div>{ error }</div> }
       { isPending && <div>Loading...</div> }
-      { pokemon && <Pokemon pokemon={pokemon} /> }
+      { pokemonList && pokemonList.results.map(item => (
+          < Pokemon pokemon={item} />
+      )) }
     </div>
-        // <div>
-        //     {pokemons.map( item =>
-        //         <Pokemon pokemon={item}/>
-        //     )}
-        // </div>
      );
 }
  
