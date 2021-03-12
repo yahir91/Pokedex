@@ -1,4 +1,7 @@
 import Pokemon from './Pokemon'
+import Container from 'react-bootstrap/Container'
+import Row from 'react-bootstrap/Row'
+import Button from 'react-bootstrap/Button';
 // import { useState, useEffect } from 'react';
 import useFetch from '../logic/useFetch'
 
@@ -7,13 +10,15 @@ const PokemonList = () => {
     const { error, isPending, data: pokemonList } = useFetch(url)
 
     return ( 
-        <div className="home">
+        <Container>
+            <Row xs={4}>
       { error && <div>{ error }</div> }
       { isPending && <div>Loading...</div> }
       { pokemonList && pokemonList.results.map(item => (
           < Pokemon pokemon={item} />
       )) }
-    </div>
+      </Row>
+    </Container>
      );
 }
  
