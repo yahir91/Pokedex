@@ -3,12 +3,8 @@
   background-color: rgb(240, 238, 235) !important;
   display: flex;
   justify-content: center;
-  margin: 2px 0;
+  /* margin: 2px 0; */
   text-align: center;
-}
-
-h3 {
-  font-size: 1rem;
 }
 
 .sprite {
@@ -17,8 +13,21 @@ h3 {
   border-radius: 10%;
 }
 
+a {
+	text-decoration: none !important;
+	
+}
+
 .pokemonName {
   text-transform: capitalize;
+  font-size: 1.3rem;
+  color: black
+}
+
+.badges {
+	display: flex;
+	flex-direction: column;
+	color: black
 }
 
 .normal {

@@ -11,8 +11,8 @@ function App() {
           <Route exact path="/">
             <PokemonList />
           </Route>
-          <Route>
-            <PokemonDetails path="/pokemon/:id" />
+          <Route path="/pokemon/:id">
+            <PokemonDetails />
           </Route>
         </Switch>
 

@@ -24,7 +24,7 @@ const PokemonList = () => {
     <div className="whiteBody">
       <PokemonFilter event={handleType} />
       <Container className="cardContainer">
-        <Row xs={4}>
+        <Row className="rowCont" xs={4}>
           { error && <div>{ error }</div> }
           { isPending && <div>Loading...</div> }
           { pokemonList && pokemonList.results.map((item, index) => (

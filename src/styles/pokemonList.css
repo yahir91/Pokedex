@@ -6,4 +6,6 @@
 
 .cardContainer {
   width: 80% !important;
+  column-gap: 20px !important;
+  row-gap: 5px !important;
 }

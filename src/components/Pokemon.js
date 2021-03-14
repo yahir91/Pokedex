@@ -29,18 +29,21 @@ const Pokemon = ({ pokemons, index }) => {
             backgroundColor: color,
           }}
           className="sprite"
-          src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/heartgold-soulsilver/${index + 1}.png`}
+          src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${index + 1}.png`}
         />
         <h3 className="pokemonName">{pokemon.name}</h3>
-        {pokemon.types.map(item => (
-          <Badge
-            pill
-            className={item.type.name}
-            key={`${item} + ${Math.random(0, 100)}`}
-          >
-            {item.type.name}
-          </Badge>
-        ))}
+        <div className="badges">
+          {pokemon.types.map(item => (
+            <Badge
+              pill
+              className={item.type.name}
+              key={`${item} + ${Math.random(0, 100)}`}
+            >
+              {item.type.name}
+            </Badge>
+
+          ))}
+        </div>
       </Col>
     </Link>
     )}
