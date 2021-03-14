@@ -12,3 +12,7 @@ h1 {
 .sprite {
     width: 50%;
 }
+
+.rowDetails {
+    padding-bottom:  30px;
+}

@@ -1,5 +1,5 @@
 import '../styles/pokemonDetails.css';
-import { useParams, Link } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Image from 'react-bootstrap/Image';
@@ -17,11 +17,8 @@ const PokemonDetails = () => {
         {pokemon
         && (
         <>
-          <Link to="/">
-            <h3>Home</h3>
-          </Link>
           <h1>{`${pokemon.name} N.${id} `}</h1>
-          <Row>
+          <Row className="rowDetails">
             <Col className="imgContainer">
               <Image className="sprite" src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${id}.png`} />
             </Col>

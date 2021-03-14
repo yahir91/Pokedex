@@ -1,0 +1,16 @@
+.category {
+    display: flex;
+    justify-content: center;
+    height: 70px;
+    background-color: gray;
+}
+
+span {
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+
+.categories {
+    height: 30px;
+  }
+  

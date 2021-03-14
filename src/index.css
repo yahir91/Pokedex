@@ -32,3 +32,9 @@ code {
     'Courier New',
     monospace;
 }
+
+.navbarPoke {
+  background-color: red;
+  display: flex;
+  justify-content: center;
+}
