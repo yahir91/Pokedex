@@ -8,7 +8,6 @@ import changeBackgroundColor from '../logic/backgroundColor';
 
 const Pokemon = ({ pokemons, index }) => {
   const { data: pokemon } = useFetch(pokemons.url);
-  // console.log(pokemon.types);
   const color = pokemon ? changeBackgroundColor(pokemon.types[0].type.name) : '';
 
   return (
@@ -25,7 +24,7 @@ const Pokemon = ({ pokemons, index }) => {
           className="sprite"
           src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/heartgold-soulsilver/${index + 1}.png`}
         />
-        <h1 className="pokemonName">{pokemon.name}</h1>
+        <h3 className="pokemonName">{pokemon.name}</h3>
         {pokemon.types.map(item => (
           <Badge
             pill

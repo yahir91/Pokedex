@@ -1,8 +1,8 @@
 import { configureStore } from '@reduxjs/toolkit';
-import pokemonReducer from './redux/pokemon';
+import filterReducer from './redux/pokemonFilter';
 
 export default configureStore({
   reducer: {
-    pokemon: pokemonReducer,
+    filter: filterReducer,
   },
 });
