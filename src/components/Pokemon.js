@@ -17,7 +17,7 @@ const Pokemon = ({ pokemons, index }) => {
       {pokemon
     && (
     <>
-      { (current === 'All' ? true : (current === (pokemon.types[0].type.name || (pokemon.types[1].type.name ? pokemon.types[1].type.name : false))))
+      { (current === 'All' ? true : ((current === (pokemon.types[0].type.name)) || (current === (pokemon.types[1] ? pokemon.types[1].type.name : false))))
     && (
     <Col
       className="card"
