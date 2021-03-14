@@ -10,13 +10,13 @@ import { addType } from '../redux/pokemonFilter';
 const PokemonList = () => {
   const url = 'https://pokeapi.co/api/v2/pokemon?limit=150&offset=0';
   const { error, isPending, data: pokemonList } = useFetch(url);
-  const { current } = useSelector(state => state.filter);
   const dispatch = useDispatch();
+  const { current } = useSelector(state => state.filter);
+  console.log(current);
 
   const handleType = e => {
     dispatch(addType(
       e.target.value,
-      console.log(current),
     ));
   };
 
