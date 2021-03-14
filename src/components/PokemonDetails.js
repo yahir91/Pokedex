@@ -9,7 +9,6 @@ import useFetch from '../logic/useFetch';
 const PokemonDetails = () => {
   const { id } = useParams();
   const { data: pokemon } = useFetch(`https://pokeapi.co/api/v2/pokemon/${id}`);
-  console.log(id);
 
   return (
     <div className="whiteBody">

@@ -11,7 +11,6 @@
 ![screenshot](screenshot2.png)
 - A more detail lookup to each pokemon.
 
-
 ## Built With
 
 - React.js, Redux, Webpack, Babel
@@ -20,19 +19,18 @@
 - ESlint, Stylelint
 - VSCode
 
-
 ## Live Demo @Netlify
 
-[Live Demo Link]()
+[Live Demo Link](https://kanto-pokedex-yahir.herokuapp.com/)
 
 ## Video Demo @Loom
 
-[Video Demo]()
+[Video Demo](https://www.youtube.com/watch?v=RyZK5H-qOtQ)
 
 ## Getting Started
 
-- `git clone https://github.com/jurgen1c/cook-this-react-capstone.git`
-- `cd cook-this-react-capstone`
+- `git clone https://github.com/yahir91/Pokedex.git`
+- `cd pokedex`
 - `npm install`
 
 ## Available Scripts

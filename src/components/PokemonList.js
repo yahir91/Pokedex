@@ -1,7 +1,7 @@
 import Container from 'react-bootstrap/Container';
 import '../styles/pokemonList.css';
 import Row from 'react-bootstrap/Row';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import Pokemon from './Pokemon';
 import useFetch from '../logic/useFetch';
 import PokemonFilter from './PokemonFilter';
@@ -11,8 +11,6 @@ const PokemonList = () => {
   const url = 'https://pokeapi.co/api/v2/pokemon?limit=150&offset=0';
   const { error, isPending, data: pokemonList } = useFetch(url);
   const dispatch = useDispatch();
-  const { current } = useSelector(state => state.filter);
-  console.log(current);
 
   const handleType = e => {
     dispatch(addType(
