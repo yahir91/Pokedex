@@ -4,6 +4,7 @@ import Image from 'react-bootstrap/Image';
 import PropTypes from 'prop-types';
 import Badge from 'react-bootstrap/Badge';
 import { useSelector } from 'react-redux';
+import { Link } from 'react-router-dom';
 import useFetch from '../logic/useFetch';
 import changeBackgroundColor from '../logic/backgroundColor';
 
@@ -19,17 +20,18 @@ const Pokemon = ({ pokemons, index }) => {
     <>
       { (current === 'All' ? true : ((current === (pokemon.types[0].type.name)) || (current === (pokemon.types[1] ? pokemon.types[1].type.name : false))))
     && (
-    <Col
-      className="card"
-    >
-      <Image
-        style={{
-          backgroundColor: color,
-        }}
-        className="sprite"
-        src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/heartgold-soulsilver/${index + 1}.png`}
-      />
-      <h3 className="pokemonName">{pokemon.name}</h3>
+    <Link to={`/pokemon/${index + 1}`}>
+      <Col
+        className="card"
+      >
+        <Image
+          style={{
+            backgroundColor: color,
+          }}
+          className="sprite"
+          src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/heartgold-soulsilver/${index + 1}.png`}
+        />
+        <h3 className="pokemonName">{pokemon.name}</h3>
         {pokemon.types.map(item => (
           <Badge
             pill
@@ -39,7 +41,8 @@ const Pokemon = ({ pokemons, index }) => {
             {item.type.name}
           </Badge>
         ))}
-    </Col>
+      </Col>
+    </Link>
     )}
     </>
     )}
