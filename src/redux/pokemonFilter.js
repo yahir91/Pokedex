@@ -7,7 +7,7 @@ export const counterSlice = createSlice({
   },
   reducers: {
     addType: (state, action) => {
-      state.current = action.payload; // eslint-disable-line 
+      state.current = action.payload;
     },
   },
 });

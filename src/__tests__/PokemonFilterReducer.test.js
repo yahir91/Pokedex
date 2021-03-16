@@ -1,6 +1,6 @@
 import filterReducer from '../redux/pokemonFilter';
 
-describe('Recipe Reducer', () => {
+describe('filter Reducer', () => {
   it('1. Checks the default state is returned', () => {
     const mockState = undefined;
     const mockAction = { type: 'any' };
