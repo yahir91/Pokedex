@@ -2,9 +2,9 @@ import Container from 'react-bootstrap/Container';
 import '../styles/pokemonList.css';
 import Row from 'react-bootstrap/Row';
 import { useDispatch } from 'react-redux';
-import Pokemon from './Pokemon';
+import Pokemon from '../components/Pokemon';
 import useFetch from '../logic/useFetch';
-import PokemonFilter from './PokemonFilter';
+import PokemonFilter from '../components/PokemonFilter';
 import { addType } from '../redux/pokemonFilter';
 
 const PokemonList = () => {
