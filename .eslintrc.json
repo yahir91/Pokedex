@@ -19,8 +19,7 @@
     "react/react-in-jsx-scope": "off",
     "import/no-unresolved": "off",
     "no-shadow": "off",
-    "arrow-parens": ["error", "as-needed"],
-    "no-param-reassign": ["error", { "props": false }]
+    "arrow-parens": ["error", "as-needed"]
   },
   "ignorePatterns": [
     "dist/",
