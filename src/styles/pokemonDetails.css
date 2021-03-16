@@ -6,7 +6,7 @@ h1 {
 .imgContainer {
   display: flex;
   justify-content: center;
-  background-color: rgb(240, 238, 235) !important;
+  background-color: rgb(240, 238, 235);
 }
 
 .sprite {

@@ -14,7 +14,7 @@ const PokemonList = () => {
 
   const handleType = e => {
     dispatch(addType(
-      e.target.value,2
+      e.target.value, 2,
     ));
   };
 

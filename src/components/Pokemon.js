@@ -25,7 +25,7 @@ const Pokemon = ({ pokemons, index }) => {
               || current
                 === (pokemon.types[1] ? pokemon.types[1].type.name : false)) && (
                 <Link to={`/pokemon/${index + 1}`}>
-                  <Col className="card">
+                  <Col className="cardPoke">
                     <Image
                       style={{
                         backgroundColor: color,
