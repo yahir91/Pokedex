@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Componnet renders correctly 1`] = `
+Array [
+  <div
+    className="whiteBody"
+  >
+    <div
+      className="container"
+    />
+  </div>,
+  ",",
+]
+`;

@@ -1,0 +1,18 @@
+h1 {
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.imgContainer {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(240, 238, 235);
+}
+
+.sprite {
+  width: 50%;
+}
+
+.rowDetails {
+  padding-bottom: 30px;
+}
